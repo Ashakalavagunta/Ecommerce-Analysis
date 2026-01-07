@@ -12,7 +12,7 @@ WHERE table_schema = 'public';
 
 --CREATE TABLES --
 
--- 1️ Customers 
+-- 1️) Customers --
 CREATE TABLE IF NOT EXISTS customers (
     customer_id SERIAL PRIMARY KEY,
     customer_name VARCHAR(100),
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS customers (
     signup_date DATE
 );
 
--- 2️ Products
+-- 2️) Products --
 CREATE TABLE IF NOT EXISTS products (
     product_id SERIAL PRIMARY KEY,
     product_name VARCHAR(100),
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS products (
     price NUMERIC(10,2)
 );
 
--- 3️ Orders (depends on customers)
+-- 3️) Orders (depends on customers) --
 CREATE TABLE IF NOT EXISTS orders (
     order_id SERIAL PRIMARY KEY,
     customer_id INT REFERENCES customers(customer_id),
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS orders (
     status VARCHAR(20)
 );
 
--- 4️ Payments (depends on orders)
+-- 4️) Payments (depends on orders) --
 CREATE TABLE IF NOT EXISTS payments (
     payment_id SERIAL PRIMARY KEY,
     order_id INT REFERENCES orders(order_id),
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS payments (
 -- INSERT VALUES INTO TABLES --
 
 
--- Customers
+-- Customers --
 INSERT INTO customers (customer_name, email, city, country, signup_date) VALUES
 ('Asha K', 'asha@gmail.com', 'New York', 'USA', '2023-01-10'),
 ('Rahul P', 'rahul@gmail.com', 'Chicago', 'USA', '2023-02-15'),
@@ -60,7 +60,7 @@ INSERT INTO customers (customer_name, email, city, country, signup_date) VALUES
 ('John D', 'john@gmail.com', 'Dallas', 'USA', '2023-04-05'),
 ('Priya M', 'priya@gmail.com', 'Seattle', 'USA', '2023-05-12');
 
--- Products
+-- Products --
 INSERT INTO products (product_name, category, price) VALUES
 ('Laptop', 'Electronics', 1200),
 ('Headphones', 'Electronics', 150),
@@ -68,7 +68,7 @@ INSERT INTO products (product_name, category, price) VALUES
 ('Smart Watch', 'Electronics', 250),
 ('Desk Lamp', 'Furniture', 80);
 
--- Orders
+-- Orders --
 INSERT INTO orders (customer_id, order_date, status) VALUES
 (1, '2024-01-05', 'Completed'),
 (2, '2024-01-15', 'Completed'),
@@ -79,7 +79,7 @@ INSERT INTO orders (customer_id, order_date, status) VALUES
 (2, '2024-04-05', 'Completed'),
 (1, '2024-04-18', 'Completed');
 
--- Payments
+-- Payments --
 INSERT INTO payments (order_id, payment_method, amount, payment_date) VALUES
 (1, 'Credit Card', 1200, '2024-01-05'),
 (2, 'PayPal', 150, '2024-01-15'),
@@ -94,26 +94,26 @@ INSERT INTO payments (order_id, payment_method, amount, payment_date) VALUES
 --VERIFY THE INSERTED DATA--
 
 
--- Customers table
+-- Customers table --
 SELECT * FROM customers;
 
--- Products table
+-- Products table --
 SELECT * FROM products;
 
--- Orders table
+-- Orders table --
 SELECT * FROM orders;
 
--- Payments table
+-- Payments table --
 SELECT * FROM payments;
 
 
---Find how much money e-commerce store made in total--
+-- Find how much money e-commerce store made in total --
 
 SELECT SUM(amount) AS total_revenue
 FROM payments;
 
 
---Find which products sold the most--
+-- Find which products sold the most --
 SELECT 
     p.product_name,
     COUNT(o.order_id) AS total_orders
@@ -124,7 +124,7 @@ GROUP BY p.product_name
 ORDER BY total_orders DESC;
 
 
---FIND customers who bought more than once--
+-- FIND customers who bought more than once --
 SELECT 
     c.customer_name,
     COUNT(o.order_id) AS order_count
@@ -134,7 +134,7 @@ GROUP BY c.customer_name
 HAVING COUNT(o.order_id) > 1;
 
 
---Track revenue month by month--
+-- Track revenue month by month --
 SELECT 
     TO_CHAR(payment_date, 'YYYY-MM') AS month,
     SUM(amount) AS monthly_revenue
@@ -143,7 +143,7 @@ GROUP BY month
 ORDER BY month;
 
 
---See which cities generate the most revenue--
+-- See which cities generate the most revenue --
 SELECT 
     c.city,
     SUM(p.amount) AS total_revenue
@@ -166,7 +166,7 @@ GROUP BY p.category
 ORDER BY total_revenue DESC;
 
 
---AOV = average amount spent per order--
+-- AOV = average amount spent per order --
 SELECT 
     c.customer_name,
     SUM(pay.amount) AS lifetime_value
@@ -177,13 +177,13 @@ GROUP BY c.customer_name
 ORDER BY lifetime_value DESC;
 
 
---AOV = average amount spent per order--
+-- AOV = average amount spent per order --
 SELECT 
     AVG(amount) AS average_order_value
 FROM payments;
 
 
---rank products by total sales using a window function--
+-- Rank products by total sales using a window function --
 SELECT 
     p.product_name,
     SUM(pay.amount) AS total_revenue,
@@ -195,7 +195,7 @@ GROUP BY p.product_name
 ORDER BY revenue_rank;
 
 
---how each category performs month by month--
+-- how each category performs month by month --
 SELECT 
     TO_CHAR(pay.payment_date, 'YYYY-MM') AS month,
     p.category,
@@ -206,4 +206,18 @@ JOIN products p ON pay.amount = p.price
 GROUP BY month, p.category
 ORDER BY month, monthly_revenue DESC;
 
+-- Total sales per customer --
+SELECT c.customer_name, SUM(pay.amount) AS total_spent
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+JOIN payments pay ON o.order_id = pay.order_id
+GROUP BY c.customer_name
+ORDER BY total_spent DESC;
+
+-- Top selling products --
+SELECT p.product_name, COUNT(pay.payment_id) AS total_sold
+FROM products p
+JOIN payments pay ON pay.amount = p.price
+GROUP BY p.product_name
+ORDER BY total_sold DESC;
 
