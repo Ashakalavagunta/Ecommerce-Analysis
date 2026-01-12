@@ -53,11 +53,46 @@ This project answers real business questions:
 * Category Performance Month by Month – Trends for each category over time  
 * Customer Lifetime Value – Total spending per customer, highlighting high-value clients  
 * Average Order Value (AOV) – Typical spending per order  
-* Ranking Products – Products ranked by revenue, identifying top revenue drivers  
+* Ranking Products – Products ranked by revenue, identifying top revenue drivers
 
-> Each analysis provides actionable insights for smarter business decisions and strategic planning.
+Each analysis provides actionable insights for smarter business decisions and strategic planning.
 
 ---
+## Results & Visual Evidence
+
+Below are selected outputs from SQL queries demonstrating the insights generated in this project.
+
+🔹 Revenue Analysis
+
+
+
+Total revenue generated across all orders.
+
+🔹 Top Products
+
+
+Top-performing products based on revenue contribution.
+
+🔹 Repeat Customers
+
+
+Customers with multiple purchases, indicating loyalty and retention.
+
+🔹 Monthly Revenue Trend
+
+
+Month-over-month revenue growth pattern.
+
+🔹 Revenue by City
+
+
+Regional revenue distribution across major cities.
+
+🔹 Revenue by Category
+
+
+Comparison of revenue across product categories.
+
 
 ## Key Insights
 
