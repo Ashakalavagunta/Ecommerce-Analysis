@@ -170,8 +170,6 @@ This project demonstrates:
 
 ## Author
 
-## Author
-
 **Asha Kalavagunta**  
 Master’s in Information Technology | Aspiring Data Analyst / Business Intelligence  
 [LinkedIn](https://www.linkedin.com/in/asha-kalavagunta-80031b223/) | [GitHub](https://github.com/Ashakalavagunta)
