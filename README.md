@@ -1,10 +1,5 @@
 # E-Commerce Business Analysis (SQL)
 
-**Asha Kalavagunta**  
-Master’s in Information Technology | Aspiring Data Analyst / Business Intelligence  
-[LinkedIn]([your-linkedin-link](https://www.linkedin.com/in/asha-kalavagunta-80031b223/)) | [GitHub]([your-github-link](https://github.com/Ashakalavagunta))
-
-
 Welcome to the *"E-Commerce Business Analysis"* project!
 
 Analyze e-commerce sales data to uncover trends, top products, and customer behavior using SQL.
@@ -175,7 +170,10 @@ This project demonstrates:
 
 ## Author
 
+## Author
+
 **Asha Kalavagunta**  
-*Master’s in Information Technology | Aspiring Data Analyst / Business Intelligence*  
+Master’s in Information Technology | Aspiring Data Analyst / Business Intelligence  
+[LinkedIn](https://www.linkedin.com/in/asha-kalavagunta-80031b223/) | [GitHub](https://github.com/Ashakalavagunta)
 
 
