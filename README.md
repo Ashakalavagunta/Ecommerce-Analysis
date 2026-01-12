@@ -1,8 +1,16 @@
 # E-Commerce Business Analysis (SQL)
 
+**Asha Kalavagunta**  
+Master’s in Information Technology | Aspiring Data Analyst / Business Intelligence  
+[LinkedIn]([your-linkedin-link](https://www.linkedin.com/in/asha-kalavagunta-80031b223/)) | [GitHub]([your-github-link](https://github.com/Ashakalavagunta))
+
 Welcome to the *"E-Commerce Business Analysis"* project!
 
-In this project, I designed a relational database for an e-commerce store using PostgreSQL, and performed SQL analysis to uncover customer behavior, product performance, and revenue trends. The focus is on generating practical business insights using real-world SQL queries.
+
+Welcome to the *"E-Commerce Business Analysis"* project!
+
+Analyze e-commerce sales data to uncover trends, top products, and customer behavior using SQL.
+This project demonstrates how SQL queries can generate actionable business insights for online stores.
 
 ---
 
@@ -11,7 +19,7 @@ In this project, I designed a relational database for an e-commerce store using 
 **PostgreSQL** – Relational database to store and query data  
 **DBeaver** – SQL client used to interact with PostgreSQL  
 
-> Note: This project was built and executed in DBeaver, connected to a PostgreSQL database.
+Note: This project was built and executed in DBeaver, connected to a PostgreSQL database.
 
 ---
 
@@ -64,18 +72,23 @@ Each analysis provides actionable insights for smarter business decisions and st
 
 #### Customers Table
 ![Customers Table](assets/images/customers_table.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Products Table
 ![Products Table](assets/images/products_table.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Orders Table
 ![Orders Table](assets/images/orders_table.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Order Items Table
 ![Order Items Table](assets/images/order_items_table.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Payments Table
 ![Payments Table](assets/images/payments_table.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 ---
 
@@ -83,37 +96,46 @@ Each analysis provides actionable insights for smarter business decisions and st
 
 #### Total Revenue
 ![Total Revenue](assets/images/total_revenue.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Top-Selling Products
 ![Top Selling Products](assets/images/top_selling_products.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Revenue Per Product
 ![Revenue Per Product](assets/images/revenue_per_product.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Customers Who Bought More Than Once
 ![Repeat Customers](assets/images/repeat_customers.png)
 
 #### Revenue by Month
 ![Revenue by Month](assets/images/revenue_by_month.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Revenue by City
 ![Revenue by City](assets/images/revenue_by_city.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Revenue by Product Category
 ![Revenue by Category](assets/images/revenue_by_category.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Average Order Value (AOV)
 ![Average Order Value](assets/images/average_order_value.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Total Spent Per Customer
 ![Total Spent Per Customer](assets/images/total_spent_per_customer.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Rank Products by Revenue
 ![Product Revenue Rank](assets/images/product_revenue_rank.png)
+*Screenshot generated from DBeaver after running the SQL query.*
 
 #### Category Performance Month by Month
 ![Category Performance Monthly](assets/images/category_performance_monthly.png)
-
+*Screenshot generated from DBeaver after running the SQL query.*
 
 ---
 
@@ -145,6 +167,11 @@ This project demonstrates:
 4. Run the provided SQL script to create tables and insert sample data.  
 5. Execute the SELECT queries to explore analytics and generate insights.  
 6. Modify or expand the dataset to experiment with more complex scenarios.  
+
+---
+## References / Data Sources
+- E-Commerce dataset: [Kaggle – Online Retail Dataset](https://www.kaggle.com/datasets)
+- Inspiration for queries: Personal practice and learning
 
 ---
 
