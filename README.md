@@ -4,8 +4,6 @@
 Master’s in Information Technology | Aspiring Data Analyst / Business Intelligence  
 [LinkedIn]([your-linkedin-link](https://www.linkedin.com/in/asha-kalavagunta-80031b223/)) | [GitHub]([your-github-link](https://github.com/Ashakalavagunta))
 
-Welcome to the *"E-Commerce Business Analysis"* project!
-
 
 Welcome to the *"E-Commerce Business Analysis"* project!
 
