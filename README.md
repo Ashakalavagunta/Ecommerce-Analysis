@@ -58,73 +58,64 @@ This project answers real business questions:
 Each analysis provides actionable insights for smarter business decisions and strategic planning.
 
 ---
-## 📸 Results (Query Outputs)
+##  Results (Query Outputs & Tables)
 
-### 🔹 Total Revenue
+### 🔹 Tables
+
+#### Customers Table
+![Customers Table](assets/images/customers_table.png)
+
+#### Products Table
+![Products Table](assets/images/products_table.png)
+
+#### Orders Table
+![Orders Table](assets/images/orders_table.png)
+
+#### Order Items Table
+![Order Items Table](assets/images/order_items_table.png)
+
+#### Payments Table
+![Payments Table](assets/images/payments_table.png)
+
+---
+
+### 🔹 Query Results
+
+#### Total Revenue
 ![Total Revenue](assets/images/total_revenue.png)
-*Displays the total revenue generated from all orders.*
 
----
+#### Top-Selling Products
+![Top Selling Products](assets/images/top_selling_products.png)
 
-### 🔹 Top-Selling Products
-![Top Products](assets/images/top_products.png)
-*Identifies the best-selling products based on quantity sold.*
-
----
-
-### 🔹 Revenue Per Product
+#### Revenue Per Product
 ![Revenue Per Product](assets/images/revenue_per_product.png)
-*Shows how much revenue each product contributes to the business.*
 
----
-
-### 🔹 Repeat Customers
+#### Customers Who Bought More Than Once
 ![Repeat Customers](assets/images/repeat_customers.png)
-*Highlights customers who made more than one purchase, indicating loyalty.*
 
----
+#### Revenue by Month
+![Revenue by Month](assets/images/revenue_by_month.png)
 
-### 🔹 Monthly Revenue Trend
-![Monthly Revenue](assets/images/monthly_revenue.png)
-*Analyzes revenue growth month by month to identify business trends.*
-
----
-
-### 🔹 Revenue by City
+#### Revenue by City
 ![Revenue by City](assets/images/revenue_by_city.png)
-*Displays revenue contribution by different cities for regional insights.*
 
----
-
-### 🔹 Revenue by Category
+#### Revenue by Product Category
 ![Revenue by Category](assets/images/revenue_by_category.png)
-*Breaks down revenue by product categories to guide marketing and inventory decisions.*
 
----
-
-### 🔹 Average Order Value (AOV)
+#### Average Order Value (AOV)
 ![Average Order Value](assets/images/average_order_value.png)
-*Shows the typical amount spent per order.*
+
+#### Total Spent Per Customer
+![Total Spent Per Customer](assets/images/total_spent_per_customer.png)
+
+#### Rank Products by Revenue
+![Product Revenue Rank](assets/images/product_revenue_rank.png)
+
+#### Category Performance Month by Month
+![Category Performance Monthly](assets/images/category_performance_monthly.png)
+
 
 ---
-
-### 🔹 Customer Lifetime Value
-![Customer Lifetime Value](assets/images/customer_lifetime_value.png)
-*Ranks customers based on total spending, highlighting high-value clients.*
-
----
-
-### 🔹 Product Revenue Ranking
-![Product Ranking](assets/images/product_ranking.png)
-*Ranks products by total revenue using SQL window functions.*
-
----
-
-### 🔹 Category Performance Over Time
-![Category Monthly](assets/images/category_monthly.png)
-*Tracks category-wise revenue month by month to identify trends and seasonality.*
-
-
 
 ## Key Insights
 
