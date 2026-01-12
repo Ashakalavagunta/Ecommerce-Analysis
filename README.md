@@ -58,40 +58,72 @@ This project answers real business questions:
 Each analysis provides actionable insights for smarter business decisions and strategic planning.
 
 ---
-## Results & Visual Evidence
+## 📸 Results (Query Outputs)
 
-Below are selected outputs from SQL queries demonstrating the insights generated in this project.
+### 🔹 Total Revenue
+![Total Revenue](assets/images/total_revenue.png)
+*Displays the total revenue generated from all orders.*
 
-🔹 Revenue Analysis
+---
 
+### 🔹 Top-Selling Products
+![Top Products](assets/images/top_products.png)
+*Identifies the best-selling products based on quantity sold.*
 
+---
 
-Total revenue generated across all orders.
+### 🔹 Revenue Per Product
+![Revenue Per Product](assets/images/revenue_per_product.png)
+*Shows how much revenue each product contributes to the business.*
 
-🔹 Top Products
+---
 
+### 🔹 Repeat Customers
+![Repeat Customers](assets/images/repeat_customers.png)
+*Highlights customers who made more than one purchase, indicating loyalty.*
 
-Top-performing products based on revenue contribution.
+---
 
-🔹 Repeat Customers
+### 🔹 Monthly Revenue Trend
+![Monthly Revenue](assets/images/monthly_revenue.png)
+*Analyzes revenue growth month by month to identify business trends.*
 
+---
 
-Customers with multiple purchases, indicating loyalty and retention.
+### 🔹 Revenue by City
+![Revenue by City](assets/images/revenue_by_city.png)
+*Displays revenue contribution by different cities for regional insights.*
 
-🔹 Monthly Revenue Trend
+---
 
+### 🔹 Revenue by Category
+![Revenue by Category](assets/images/revenue_by_category.png)
+*Breaks down revenue by product categories to guide marketing and inventory decisions.*
 
-Month-over-month revenue growth pattern.
+---
 
-🔹 Revenue by City
+### 🔹 Average Order Value (AOV)
+![Average Order Value](assets/images/average_order_value.png)
+*Shows the typical amount spent per order.*
 
+---
 
-Regional revenue distribution across major cities.
+### 🔹 Customer Lifetime Value
+![Customer Lifetime Value](assets/images/customer_lifetime_value.png)
+*Ranks customers based on total spending, highlighting high-value clients.*
 
-🔹 Revenue by Category
+---
 
+### 🔹 Product Revenue Ranking
+![Product Ranking](assets/images/product_ranking.png)
+*Ranks products by total revenue using SQL window functions.*
 
-Comparison of revenue across product categories.
+---
+
+### 🔹 Category Performance Over Time
+![Category Monthly](assets/images/category_monthly.png)
+*Tracks category-wise revenue month by month to identify trends and seasonality.*
+
 
 
 ## Key Insights
